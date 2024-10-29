@@ -63,6 +63,12 @@ class Linker {
 
     /* c8 ignore next 3 */
     if (tarball.length !== 1) {
+      console.log({
+        max,
+        latestDir,
+        tarball,
+        allDirectories
+      })
       throw new Error('Could not find latest.tar.gz')
     }
 
